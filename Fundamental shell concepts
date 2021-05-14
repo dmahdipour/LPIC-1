@@ -1,0 +1,114 @@
+CentOS 7 Everything, Ubuntu Desktop 18-04 LTS, Fedora 29 Workstation, and openSUSE 15Leap distro
+=========================================================================
+Bash      => Linux, Windows 10, Mac
+Dash      => Debian (Shell without command editting and history and faster)
+KornShell => C program Language for Scripts
+tcsh      => TENEX C shell
+Z shell   => Bash + KornShell + tcsh
+========================================================================
+Bash shell metacharacters	* ? [ ] ' " \ $ ; & ( ) | ^ < >
+========================================================================
+Environment Variables
+BASH_VERSION		=> current bash version
+EDITOR   ??			=> Default shell command editor
+GROUPS			=> User group
+HISTFILE 		=> Shell command history file
+HISTSIZE		=> Maximum number of commands history
+HOME			=> Current user’s home directory
+HOSTNAME		=> Computer name
+LANG			=> Shell Language
+LC_*			=> Locale settings
+LC_ALL	??		=> Shell LANG overrides
+LD_LIBRARY_PATH	 ??	=> Colon-separated list of library
+PATH			=> Shell commands sources file path
+PS1		?	=> Primary shell commandline interface prompt
+PS2			=> Secondary shell commandline interface prompt
+PWD 			=> Print working directory
+SHLVL		?	=> Current shell level
+TZ		??	=> Time zone, if different from system’s
+UID			=> User account’s user identification number
+VISUAL		??	=> Default screen-based editor
+========================================================================
+Dash Command Lists
+
+1.1
+get type of shell:					readlink /bin/sh
+
+1.2
+get current shell:					echo $SHELL
+
+1.3
+get bash version:					echo $BASH_VERSION
+
+1.4
+get current shell:					uname
+(kernel version = reversion)				uname -r
+(All information)					uname -a
+
+1.5
+Display simple string					echo
+
+1.6 - 1.7
+Use \ to disply string include metaChars		echo \$1.00
+
+1.8 (dosnot work for $)
+Use " or ' to disply string include metaChars		echo "$1.00"
+
+1.9
+Use cd for go into directory				cd /etc
+Use pwd for print current path				pwd
+
+1.10
+Use cd .. to backward once				cd .. 
+Use cd /  to backward to root Directory			cd /	
+Use cd ~ or $HOME  to go home Directory			cd ~	cd $HOME
+
+1.11
+Use cd /xxx to go quickly				cd /var
+Use cd - to back last used path and print it		cd -
+
+1.12
+Determine type of command (internal/external)		type echo
+
+1.13
+After use 'set' command you can change Enviroment Var	HISTSIZE=900
+Display all Enviroment Variable Values			printenv  or  env
+
+1.14
+List of files						ls
+
+1.15
+Run app by typing name					hello.sh
+
+1.16
+Find command or app path loacation			which ls
+
+1.17
+Run command or app by locating PATH path		/usr/bin/echo SALAM
+
+1.18
+Create subShell				PS1="myPrompt: "	=> bash
+
+1.19
+Print Shell Level					echo $SHLVL
+
+1.20 - 1.21
+Define Variable value					export $EDITOR=nano
+Clear Variable value (Don't use if not nessecery)	unset EDITOR
+
+1.22
+Open command Manual (k for search ability)		man -k passwd
+Use -S or -s by number of section of command		man -S 5  passwd
+							man 5 passwd
+Watch manual document update details			mandb
+
+1.23
+Watch History cammand recently used			history
+
+1.24
+Excute command by history number			!273
+To excute last command					!!
+
+1.25
+
+
