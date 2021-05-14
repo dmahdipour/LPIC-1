@@ -29,6 +29,22 @@ TZ		??	=> Time zone, if different from system’s
 UID			=> User account’s user identification number
 VISUAL		??	=> Default screen-based editor
 ========================================================================
+Three popular Linux command-line text editors: 
+nano (simple and installed by default)
+emacs - vim  (more powerful)
+
+Set default editor by EDITOR  (line base) and VISUAL  (screen based)
+
+^	=>  ctrl
+M-k	=>  Meta key like ESC ALT ...   k like a charachter
+
+Save shortcut		Ctrl+X  +  Ctrl+S
+Save and Exit		Ctrl+X  +  Ctrl+C
+Display Tutorial	Ctrl+H  +  T
+
+========================================================================
+
+========================================================================
 Dash Command Lists
 
 1.1
@@ -94,13 +110,14 @@ Print Shell Level					echo $SHLVL
 
 1.20 - 1.21
 Define Variable value					export $EDITOR=nano
+							export $VISUAL=vim
 Clear Variable value (Don't use if not nessecery)	unset EDITOR
 
 1.22
 Open command Manual (k for search ability)		man -k passwd
 Use -S or -s by number of section of command		man -S 5  passwd
 							man 5 passwd
-Watch manual document update details			mandb
+Display manual document update details			mandb
 
 1.23
 Watch History cammand recently used			history
@@ -110,5 +127,13 @@ Excute command by history number			!273
 To excute last command					!!
 
 1.25
+History filename					echo $HISTFILE
+Clear history of command				history -c
+Append command to end of history			history -a
+Append command history list from history file		history -n
+Restore command history list from history file		history -r
+Wipe history file (Should use after history -c)		history -w
+
+
 
 
