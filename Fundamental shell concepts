@@ -135,5 +135,36 @@ Restore command history list from history file		history -r
 Wipe history file (Should use after history -c)		history -w
 
 
+1.26
+Display type of vi(vim) editor 				type vi
+If it shows vi.tiny  => install vim			readlink -f /usr/bin/vi
+In command or normal mode:
+	Move line down					j
+	Move line up					k
+	Move left one character				h
+	Move right one character			l
+	Move forward one word				w
+	Move backward one character			b
+	Move to begin of line				^
+	Move to end of line				$
+	Move to first line line of file			gg
+	Move to end line of file			G
+	Move to line number				nG
+	Page up						Ctrl+B
+	Page down					Ctrl+F
+	Start of file					Ctrl+U
+	End of file					Ctrl+D
+	Scroll one line up				Ctrl+Y
+	Scroll one line down				Ctrl+E
+	
+Search forward						?
+Search backward						/
+	Use Enter and then n to go next
+Active Insert mode					i
+Quit from Insert mode					Esc
+Colon Command mode (all commands start with :)		
+	Quit witout save				:q
+		
 
 
+Page 76
